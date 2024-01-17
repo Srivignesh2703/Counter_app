@@ -8,4 +8,14 @@ function increment() {
     countEl.innerText = count
 }
 
-increment()
+let saveEl = document.getElementById('save-el')
+
+function save() {
+    saveEl.textContent += count + " - "
+    count = 0
+    countEl.textContent = count
+}
+
+function reset() {
+    saveEl.textContent = "Previous Entries:"
+}
